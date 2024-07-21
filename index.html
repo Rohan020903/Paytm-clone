@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"/>
+    <link href="./output.css" rel="stylesheet" />
+    <link href= "https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" 
+          rel="stylesheet"> 
+          
+  </head>
+  <body>
+    
+    <nav >
+      <ol class="list-none flex ml-24 mt-8 mb-6 space-x-10 font-bold text-lg ">
+        <li><img src="logo.svg" alt="" /></li>
+        
+        <select class="rounded-2xl ">
+          <option value="Consumer">Paytm For Cunsumer</option>
+          <option value="Cunsumer">Payment</option>
+          <option value="Cunsumer">Ticket Booking</option>
+          <option value="Cunsumer">Financial Service</option>
+        </select>
+        
+        <select class="rounded-2xl ">
+          <option value="Consumer Payment" >Paytm for Business</option>
+          <option value="Consumer Payment">Consumer Payment</option>
+          <option value="Consumer Payment">Business Payment</option>
+          <option value="Consumer Payment">Business Software</option>
+          <option value="Consumer Payment">Financial Service</option>
+          <option value="Consumer Payment">Developer</option>
+        </select>
+        <li class="pt-3">Investor Relations</li>
+       
+        <select class="rounded-2xl ">
+          <option value="Company">Company</option>
+          <option value="About">About</option>
+          <option value="CSR">CSR</option>
+          <option value="Blog">Blog</option>
+          <option value="Contact Us">Contact Us</option>
+          <option value="Terms And Conditions">Terms</option>
+        </select>
+        <li class="pt-3">Career</li>
+        <li class="pt-3">
+          <button class="bg-blue-500 text-white rounded-3xl px-7 py-2" onclick="openModal()">
+            Sign In
+          </button>
+        </li>
+      </ol>
+    </nav>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content rounded-3xl">
+        <span class="close" onclick="closeModal()">&times;</span> <!-- Close button -->
+        <p class="font-bold text-xl items-center text-center ">Login your Paytm account</p>
+      
+      <div class="flex">
+        <div>
+          <p class="mt-6 ml-4 text-lg font-bold mb-2">Steps to scan QR Code</p>
+          <ol class="ml-4 text-base mr-10">
+            <li class="leading-loose">1.Open Paytm App</li>
+            <li >2.Tap Scan option available at the </li>
+            <li class="leading-loose">bottom</li>
+            <li>3.Point Paytm Scan at QR Code to </li>
+            <li>login</li>
+          </ol>
+        </div>
+        <div>
+          <img src="scanner.png" alt="" class="h-44 w-44 mt-8 mb-8 ml-12">
+        </div>
+      </div>
+      <span class="mb-10">By signing in, you agree to our <span class="text-blue-300">privacy policy</span> and <span class="text-blue-300">terms of use</span></span>
+    <div class="flex mt-10 ml-2 mr-3 mb-5 justify-between">
+      <div>
+        <p>To create an account download</p>
+        <p>Paytm App</p>
+      </div>
+      <div>
+        <img src="appstore.svg" alt="" height="40px" width="139px">
+      </div>
+      <div>
+        <img src="google.svg" alt="" height="40px" width="139px">
+      </div>
+    </div>
+    </div>
+  </div>
+
+    </option>
+    <div class="flex text-xl bg-yellow-300 p-4 font-bold">
+      <img src="./25f8acf9.svg" alt="" class="h-12 w-12 ml-32" />
+      <p>
+        We have received approval from NPCI as a Third-Party Application
+        Provider (TPAP).
+      </p>
+      <p class="text-cyan-400 ml-3 text-2xl cursor-pointer">
+        Click to know more
+      </p>
+    </div>
+    <style>
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .flex-item {
+          
+            margin-top: 60px;
+        }
+        #demo{
+          padding-left: 20px;
+          padding-right: 20px;
+          box-sizing: border-box;
+          border-radius: 10px;
+         padding-top: 12px;
+         padding-bottom: 12px;
+        }
+        #bills{
+          justify-content: space-between;
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+        #bills11{
+          justify-content: space-between;
+          padding-left: 40px;
+          padding-right: 40px;
+          background-color: rgb(19, 19, 139);
+        }
+        #picture{
+          padding-top:60px;
+          padding-bottom: 40px;
+        }
+        #bills1:hover{
+          background-color: blueviolet;
+          border-radius: 20px;
+          box-sizing: border-box;
+          padding-top:  20px;
+          padding-bottom: 20px;
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+        #bills2:hover{
+          background-color: blueviolet;
+          border-radius: 20px;
+          box-sizing: border-box;
+          padding-top:  20px;
+          padding-bottom: 20px;
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+        #bills3:hover{
+          background-color: blueviolet;
+          border-radius: 20px;
+          box-sizing: border-box;
+          padding-top:  20px;
+          padding-bottom: 20px;
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+        #bills4:hover{
+          background-color: blueviolet;
+          border-radius: 20px;
+          box-sizing: border-box;
+          padding-top:  20px;
+          padding-bottom: 20px;
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+        #bills5:hover{
+          background-color: blueviolet;
+          border-radius: 20px;
+          box-sizing: border-box;
+          padding-top:  20px;
+          padding-bottom: 20px;
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+        #bills6:hover{
+          background-color: blueviolet;
+          border-radius: 20px;
+          box-sizing: border-box;
+          padding-top:  20px;
+          padding-bottom: 20px;
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+        #bills7:hover{
+          background-color: blueviolet;
+          border-radius: 20px;
+          box-sizing: border-box;
+          padding-top:  20px;
+          padding-bottom: 20px;
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+        #bills7{
+          padding-bottom: 50px;
+        }
+        
+        .buy{
+          background-color: blue;
+        }
+        h1{
+          background-color: blue;
+        }
+        .size{
+          height: 60px;
+          width: 60px;
+        }
+        .bill{
+          color: white;
+          font-size: 18px;
+          font-weight: bold;
+        }
+        h2{
+          background-color: rgb(19, 19, 139);
+          font-size: 50px;
+          font-weight: bold;
+          padding-top: 50px;
+          padding-bottom: 30px;
+        }
+        .stock{
+          padding-bottom: 50px;
+        }
+        #card1:hover{
+          background-color: blueviolet;
+          border-radius: 20px;
+          box-sizing: border-box;
+          padding-top:  20px;
+          padding-bottom: 20px;
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+        #card2:hover{
+          background-color: blueviolet;
+          border-radius: 20px;
+          box-sizing: border-box;
+          padding-top:  20px;
+          padding-bottom: 20px;
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+        #card3:hover{
+          background-color: blueviolet;
+          border-radius: 20px;
+          box-sizing: border-box;
+          padding-top:  20px;
+          padding-bottom: 20px;
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+        #card4:hover{
+          background-color: blueviolet;
+          border-radius: 20px;
+          box-sizing: border-box;
+          padding-top:  20px;
+          padding-bottom: 20px;
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+        #card5:hover{
+          background-color: blueviolet;
+          border-radius: 20px;
+          box-sizing: border-box;
+          padding-top:  20px;
+          padding-bottom: 20px;
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+        #card6:hover{
+          background-color: blueviolet;
+          border-radius: 20px;
+          box-sizing: border-box;
+          padding-top:  20px;
+          padding-bottom: 20px;
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+        #card7:hover{
+          background-color: blueviolet;
+          border-radius: 20px;
+          box-sizing: border-box;
+          padding-top:  20px;
+          padding-bottom: 20px;
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+        .wallet{
+          margin-top: 20px;
+          font-size: 18px;
+          font-weight: bold;
+        }
+        .wallet1{
+         
+          font-size: 18px;
+          font-weight: bold;
+        }
+        button:hover{
+          background-color: white;
+          color: black;
+          border: 1px solid black;
+        }
+        .button1:hover{
+          background-color: rgb(156, 64, 64);
+          color: rgb(27, 160, 38);
+          border: 1px solid black;
+        }
+
+        /* modal */
+        
+  /* Style for the modal container */
+  .modal {
+    display: none; /* Hide the modal by default */
+    position: fixed; /* Position the modal */
+    z-index: 1; /* Make sure it appears above everything else */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scrolling if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black with transparency */
+  }
+  
+  /* Style for the modal content */
+  .modal-content {
+    background-color: #fefefe;
+   
+    margin: 8% auto; /*Center the modal on the screen */
+    padding-left:  10px;
+    padding-right: 4px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border: 1px solid #888;
+    width: 45%; /* Adjust width if needed */
+  }
+  
+  /* Style for the close button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+</style>
+    </style>
+    
+    <div class="flex-container mb-36">
+        <div class="flex-item">
+            <img src="./1697527183231.avif" alt="" class="h-20 w-20 mt-24 ml-10 mb-14">
+            <p class="ml-10 text-5xl font-bold">India's Most-loved</p>
+            <p class="ml-10 text-5xl font-bold">Payments App</p><br>
+            <p class="ml-10 text-2xl">Recharge & pay bills, book flights & movie tickets,</p>
+            <p class="ml-10 text-2xl">open a savings account, invest in stocks & mutual</p>
+            <p class="ml-10 text-2xl mb-8">funds, and do a lot more</p>
+            <button id="demo" class="ml-10 bg-black text-white">Download Paytm App</button>
+        </div>
+        <div class="flex-item">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/850762/1706796536129.png" alt="" height="477" width="528" class="mb-96">
+        </div>
+    </div>
+    <h1 id="picture" class="bg-blue-400 mt-32 text-white text-3xl font-bold">Recharge & Pay Bills on Paytm.</h1>
+    <div id="bills" class="flex bg-blue-400 ">
+     <div id="bills1">  
+        <img src="mobile.png" alt="" class="h-20 w-20" >
+        <p class="bill">Recharge</p>
+        <p class="bill">Prepaid</p>
+        <p class="bill">Mobile ></p>
+    </div>
+    <div id="bills2">  
+        <img src="mob.png" alt="" class="h-20 w-20">
+        <p class="bill">Recharge</p>
+        <p class="bill">Prepaid</p>
+        <p class="bill">Mobile ></p>
+    </div>
+    <div id="bills3">  
+        <img src="antina.png" alt="" class="h-20 w-20">
+        <p class="bill">Recharge</p>
+        <p class="bill">Prepaid</p>
+        <p class="bill">Mobile ></p>
+    </div>
+    <div id="bills4">  
+        <img src="cylinder.png" alt="" class="h-20 w-20">
+        <p class="bill">Recharge</p>
+        <p class="bill">Prepaid</p>
+        <p class="bill">Mobile ></p>
+    </div>
+    <div id="bills5">  
+        <img src="wifi.png" alt="" class="h-20 w-20">
+        <p class="bill">Recharge</p>
+        <p class="bill">Prepaid</p>
+        <p class="bill">Mobile ></p>
+    </div>
+    <div id="bills6">  
+        <img src="call.png" alt="" class="h-20 w-20">
+        <p class="bill"> Recharge</p>
+        <p class="bill">Prepaid</p>
+        <p class="bill">Mobile ></p>
+    </div>
+    <div id="bills7">  
+        <img src="box.png" alt="" class="h-20 w-20 ">
+        <p class="bill">Recharge</p>
+        <p class="bill">Prepaid</p>
+        <p class="bill">Mobile ></p>
+    </div>
+  </div>
+  <h2 class="bg-blue-950  text-white text-3xl font-bold">Book & Buy on Paytm.</h2>
+  <div class="buy flex" id="bills11">
+    
+   <div id="card1">
+    <img src="movie.png" alt="" class="h-20 w-20">
+    <p class="bill">Movie</p>
+    <p class="bill">Tickets ></p>
+   </div>
+   <div id="card2">
+    <img src="flight.png" alt="" class="h-20 w-20">
+    <p class="bill">Flight</p>
+    <p class="bill">Tickets ></p>
+   </div>
+   <div id="card3">
+    <img src="bus.png" alt="" class="h-20 w-20">
+    <p class="bill">Bus</p>
+    <p class="bill">Tickets ></p>
+   </div>
+   <div id="card4">
+    <img src="train.avif" alt="" class="h-20 w-20">
+    <p class="bill">Train</p>
+    <p class="bill">Tickets ></p>
+   </div>
+   <div id="card5">
+    <img src="ins.png" alt="" class="h-20 w-20">
+    <p class="bill">Buy</p>
+    <p class="bill">Insurance ></p>
+   </div>
+   <div id="card6">
+    <img src="global.png" alt="" class="h-20 w-20">
+    <p class="bill">International</p>
+    <p class="bill">Flight ></p>
+   </div>
+   <div class="stock" id="card7">
+    <img src="stock.webp" alt="" class="h-20 w-20" >
+    <p class="bill">Invest</p>
+    <p class="bill">in Stocks ></p>
+   </div>
+
+  </div>
+  <h3 class="text-5xl font-bold mt-32 ml-24 mb-4">Paytm Payment Instruments</h3><br><br>
+  <div  style="background-color: rgb(252, 234, 234);box-sizing: border-box;border-radius:20px;box-shadow:0 0 1px rgba(0, 0, 0, 0.1) ;padding: 4px;margin-left: 80px;margin-right: 80px;">
+    <div class="flex" style="margin-top: 80px;">
+    <div>
+      <img src="paytmwallet.png" alt="" height="100px" width="100px" style="margin-left: 80px;">
+    </div>
+    <div >
+      <p class="wallet" style="padding-left: 10px;">Paytm </p>
+      <p class="wallet1" style="padding-left: 10px;">Wallet</p>
+    </div>
+    </div>
+    <div class="flex">
+    <div>
+      <p style="font-size: 40px;font-weight: bold;margin-left: 80px;">The Fastest Way to</p>
+      <p style="font-size: 40px;font-weight: bold;margin-left: 80px;">Pay In-store & Online.</p>
+      <p style="margin-top: 20px;font-size: 20px;font-weight: bold;margin-left: 80px;">Load up your Paytm Wallet for free and make payments</p>
+      <p  style="font-size: 20px;font-weight: bold;margin-left: 80px;">in a jiffy at over 21 million stores, websites and apps.</p>
+      <button style="margin-left: 80px; margin-top: 30px;background-color: black;color: white;font-size: 18px;padding-left: 20px;padding-right: 20px;padding-top: 12px;padding-bottom: 12px;box-sizing: border-box;border-radius: 10px;" class="button1">Download The App</button>
+    </div>
+   
+    <div>
+      <img src="paymentbank.webp" alt="" height="900px" width="600px" >
+    </div>
+  </div>
+</div><br><br>
+
+  <div  style="background-color: rgb(252, 234, 234);box-sizing: border-box;border-radius:20px;box-shadow:0 0 1px rgba(0, 0, 0, 0.1) ;padding: 4px;margin-left: 80px;margin-right: 80px;">
+    <div class="flex" style="margin-top: 80px;">
+    <div>
+      <img src="rs.png" alt="" height="100px" width="100px" style="margin-left: 80px;">
+    </div>
+    <div >
+      <p class="wallet" style="padding-left: 10px;">UPI Money</p>
+      <p class="wallet1" style="padding-left: 10px;">Transfer</p>
+    </div>
+    </div>
+    <div class="flex">
+    <div>
+      <p style="font-size: 40px;font-weight: bold;margin-left: 80px;">Pay anyone directly</p>
+      <p style="font-size: 40px;font-weight: bold;margin-left: 80px;">from your bank</p>
+      <p style="font-size: 40px;font-weight: bold;margin-left: 80px;">account.</p>
+      <p style="margin-top: 20px;font-size: 20px;font-weight: bold;margin-left: 80px;">Pay anyone, everywhere. Make contactless & secure</p>
+      <p  style="font-size: 20px;font-weight: bold;margin-left: 80px;">payments in-stores or online using Paytm Wallet or</p>
+      <p  style="font-size: 20px;font-weight: bold;margin-left: 80px;">Directly from your Bank Account. Plus, send </p>
+      <p  style="font-size: 20px;font-weight: bold;margin-left: 80px;">money from anyone.</p>
+      <button style="margin-left: 80px; margin-top: 30px;background-color: black;color: white;font-size: 18px;padding-left: 20px;padding-right: 20px;padding-top: 12px;padding-bottom: 12px;box-sizing: border-box;border-radius: 10px;" class="button1">Download The App</button>
+    </div>
+   
+    <div>
+      <img src="send.webp" alt="" height="900px" width="500px" style="padding-left: 40px;padding-bottom: 20px;">
+    </div>
+  </div>
+</div><br><br>
+<div class="flex">
+  <div style="background-color: rgb(250, 239, 239);box-sizing: border-box;border-radius: 20px;margin-left: 80px;padding-left: 80px;margin-bottom: 80px;padding-bottom: 80px;">
+     <img src="bank.png" alt="" height="77px" width="185px" style="margin-bottom: 20px;">
+     <p style="font-size: 40px;font-weight: bold;">Unlimited Cashback</p>
+     <p style="font-size: 40px;font-weight: bold;">Every time</p>
+     <p  style="font-size: 20px;font-weight: bold;">Paytm HDFC Bank Select Credit Card.</p>
+    <p  style="font-size: 20px;font-weight: bold;">A card with assured Cashback and incredible offers.</p>
+    <p>*Paytm Payments Bank does not provide any loan or credit</p>
+    <span>card on the Paytm App.</span><span style="color: aqua;cursor: pointer;">Know More</span>
+    <img src="creditcard.webp" alt="" height="296px" width="463px">
+  </div>
+  <div style="background-color: rgb(250, 239, 239);box-sizing: border-box;border-radius: 20px;margin-left: 80px;padding-left: 80px;margin-bottom: 80px;padding-bottom: 80px;padding-top: 60px;">
+    <img src="sbi.png" alt="" height="20px" width="196px" style="margin-bottom: 20px;">
+    <p style="font-size: 40px;font-weight: bold;">India’s Most</p>
+    <p style="font-size: 40px;font-weight: bold;">Sincere Credit Card</p>
+    <p style="font-size: 20px;font-weight: bold;">Paytm SBI Card SELECT - With Intelligent </p>
+    <p style="font-size: 20px;font-weight: bold;">Features & Great Rewards that Never Expire</p>
+    <p>*Paytm Payments Bank does not provide any loan or credit </p>
+    <span>card on the Paytm App.</span><span style="color: aqua;cursor: pointer;">Know More</span>
+    <img src="card.webp" alt="" height="296px" width="464px">
+  </div>
+</div>
+
+
+  <div  style="background-color: rgb(252, 234, 234);box-sizing: border-box;border-radius:20px;box-shadow:0 0 1px rgba(0, 0, 0, 0.1) ;padding: 4px;margin-left: 80px;margin-right: 80px;">
+    <h3 class="text-5xl font-bold   mb-4 mt-10" style="margin-left: 80px;">Financial Services by Paytm</h3>
+    <div class="flex" style="margin-top: 80px;">
+      <img src="pay.png" alt="" height="35px" width="212px" style="margin-left: 80px;margin-bottom: 60px;">
+    </div>
+    <div class="flex">
+    <div>
+      <p style="font-size: 40px;font-weight: bold;margin-left: 80px;">India's most sincere</p>
+      <p style="font-size: 40px;font-weight: bold;margin-left: 80px;">bank.</p>
+      <p style="margin-top: 20px;font-size: 20px;font-weight: bold;margin-left: 80px;">Paytm Payments Bank offers secure, transparent and</p>
+      <p style="font-size: 20px;font-weight: bold;margin-left: 80px;">risk-free banking at your fingertips. With instant</p>
+      <p style="font-size: 20px;font-weight: bold;margin-left: 80px;">account opening, virtual debit card and zero balance</p>
+      <p  style="font-size: 20px;font-weight: bold;margin-left: 80px;">requirements, experience the future of banking today.</p>
+      <button style="margin-left: 80px; margin-top: 30px;background-color: rgb(5, 6, 80);color: white;font-size: 18px;padding-left: 20px;padding-right: 20px;padding-top: 12px;padding-bottom: 12px;box-sizing: border-box;border-radius: 10px;font-weight: bold;" class="button1">Learn More ></button>
+    </div>
+   
+    <div>
+      <img src="paytm.webp" alt="" height="500px" width="452px" style="margin-left: 100px;">
+    </div>
+  </div>
+</div><br><br>
+<div class="flex" style="margin-left: 80px;margin-top: 40px;justify-content: space-between;">
+ <div style="margin-left: 80px;">
+  <img src="paytmmoney.webp" alt="" height="59px" width="150px" style="margin-bottom: 20px;">
+  <p style="font-size: 15px;">Get started on wealth</p>
+  <p style="font-size: 15px;">creation journey with Zero</p>
+  <p style="font-size: 15px;">brokerage fee & no hidden</p>
+  <p style="font-size: 15px;">charges.</p>
+  <p style="color: aqua;cursor: pointer;margin-top: 15px;font-weight: bold;font-size: 17px;">Learn More</p>
+ </div>
+ <div style="background-color: aqua;color: white;font-weight: bold;box-sizing: border-box;border-radius: 10px;padding: 10px;">
+  <img src="invest.webp" alt="" height="158px" width="145px">
+  <p style="font-size: 17px;">Invest In</p>
+  <p style="font-size: 17px;">Stocks</p>
+ </div>
+ <div style="background-color: aqua;color: white;font-weight: bold;box-sizing: border-box;border-radius: 10px;padding: 10px;">
+  <img src="phone.webp" alt="" height="158px" width="145px">
+  <p style="font-size: 17px;">Apply For IPO</p>
+ </div>
+ <div style="background-color: aqua;color: white;font-weight: bold;box-sizing: border-box;border-radius: 10px;padding: 10px;">
+  <img src="investbank.webp" alt="" height="158px" width="145px">
+  <p style="font-size: 17px;">Invest In</p>
+  <p style="font-size: 17px;">ETFs</p>
+ </div>
+ <div style="background-color: aqua;color: white;font-weight: bold;box-sizing: border-box;border-radius: 10px;padding: 10px;">
+  <img src="stock1.webp" alt="" height="158px" width="145px">
+  <p style="font-size: 17px;">Buy Gold</p>
+ </div>
+ <div style="background-color: aqua;color: white;font-weight: bold;box-sizing: border-box;border-radius: 10px;padding: 10px;">
+  <img src="trade.webp" alt="" height="158px" width="145px">
+  <p style="font-size: 17px;">Invest in</p>
+  <p style="font-size: 17px;">Mutual Fund</p>
+ </div>
+</div>
+      
+<div class="flex" style="margin-left: 80px;margin-top: 80px;justify-content: space-between;margin-bottom: 80px;">
+  <div style="margin-left: 80px;">
+   <img src="paytmtravel.webp" alt="" height="59px" width="150px" style="margin-bottom: 20px;">
+   <p style="font-size: 15px;">Best travel solutions with</p>
+   <p style="font-size: 15px;">quick ticket bookings, great</p>
+   <p style="font-size: 15px;">offers and easy refunds</p>
+   <p style="color: aqua;cursor: pointer;margin-top: 15px;font-weight: bold;font-size: 17px;">Learn More</p>
+  </div>
+  <div style="background-color: aqua;color: white;font-weight: bold;box-sizing: border-box;border-radius: 10px;padding: 15px;padding-bottom: 6px;">
+   <img src="flat.webp" alt="" height="72px" width="72px" style="padding-top: 10px;">
+   <p style="font-size: 17px;margin-top: 20px;">Flat 14%  </p>
+   <p style="font-size: 17px;">Cashback</p>
+   <p style="font-size: 14px;">With Code</p>
+   <p style="font-size: 14px;"> WELCOMEFLIGHT</p>
+  </div>
+  <div style="background-color: aqua;color: white;font-weight: bold;box-sizing: border-box;border-radius: 10px;padding: 8px;padding-bottom: 6px;">
+    <img src="img.webp" alt="" height="72px" width="72px" style="padding-top: 10px;">
+    <p style="font-size: 17px;margin-top: 20px;">100% Refund</p>
+    <p style="font-size: 17px;">With Paytm's </p>
+    <p style="font-size: 14px;">Cancellation Protect</p>
+  </div>
+  <div style="background-color: aqua;color: white;font-weight: bold;box-sizing: border-box;border-radius: 10px;padding: 35px;padding-bottom: 6px;">
+    <img src="bus1.webp" alt="" height="72px" width="72px" style="padding-top: 10px;">
+    <p style="font-size: 17px;margin-top: 20px;">Flat 10%  </p>
+    <p style="font-size: 17px;">Cashback</p>
+    <p style="font-size: 14px;">With Code</p>
+    <p style="font-size: 14px;"> HAPPYBUS</p>
+  </div>
+  <div style="background-color: aqua;color: white;font-weight: bold;box-sizing: border-box;border-radius: 10px;padding: 20px;padding-bottom: 6px;">
+    <img src="doctor.webp" alt="" height="72px" width="72px" style="padding-top: 10px;">
+    <p style="font-size: 17px;">Sanitised Bus </p>
+    <p style="font-size: 14px;">Options With </p>
+    <p style="font-size: 14px;">TravelSafe+</p>
+  </div>
+  <div style="background-color: aqua;color: white;font-weight: bold;box-sizing: border-box;border-radius: 10px;padding: 30px;padding-bottom: 6px;">
+    <img src="train11.avif" alt="" height="72px" width="72px" style="padding-top: 10px;">
+    <p style="font-size: 17px;">Hassle Free </p>
+    <p style="font-size: 14px;">Train Ticket</p>
+    <p style="font-size: 14px;"> Bookings</p>
+  </div>
+  <div style="background-color: aqua;color: white;font-weight: bold;box-sizing: border-box;border-radius: 10px;padding: 22px;padding-bottom: 6px;">
+    <img src="pnr.webp" alt="" height="72px" width="72px" style="padding-top: 10px;">
+    <p style="font-size: 17px;margin-top: 20px;">PNR Status</p>
+    <p style="font-size: 17px;">Check In Few</p>
+    <p style="font-size: 14px;">Simple Clicks</p>
+  </div>
+ </div>
+ <div class="flex" style="margin-left: 40px;">
+  <div>
+    <p style="font-size: 20px;font-weight: bold;">Download Paytm App</p>
+    <p style="font-size: 20px;font-weight: bold;">to Pay from anywhere</p>
+  </div>
+  <div>
+    <img src="downloadApple.svg" alt="" height="53px" width="160px" style="margin-left: 30px;margin-right: 15px;">
+  </div>
+  <div>
+    <img src="downloadGoogle.svg" alt="" height="53px" width="179px" style="margin-right: 550px;">
+  </div>
+  <div>
+    <img src="twitter.svg" alt="" height="24px" width="25px" style="margin-right: 30px;">
+  </div>
+  <div>
+   <img src="instagram.svg" alt="" height="24px" width="25px" style="margin-right: 20px;">
+  </div>
+  <div>
+    <img src="facebook.png" alt="" height="20px" width="35px" style="margin-right: 20px;margin-top: 0;padding-bottom: 40px;">
+  </div>
+ </div><br><br>
+ <hr style="color: black;margin-bottom: 80px;">
+ <footer style="margin-left: 80px; margin-bottom: 100px;">
+  <ol class="list-none font-bold">
+    <div class="flex items-center">
+      <span class="">+ Investor Relations</span>
+      <hr class="flex-grow">
+     </div><br>
+    <div class="flex items-center">
+      <span class="">+ More about Paytm</span>
+      <hr class="flex-grow">
+     </div><br>
+    <div class="flex items-center">
+      <span class="">+ Company</span>
+      <hr class="flex-grow">
+     </div><br>
+    <div class="flex items-center">
+      <span class="">+ Important Updates</span>
+      <hr class="flex-grow">
+     </div><br>
+    <div class="flex items-center">
+      <span class="">Career</span>
+      <hr class="flex-grow">
+     </div><br>
+    <div class="flex items-center">
+      <span class="">+ Recharge & pay bills</span>
+      <hr class="flex-grow">
+     </div><br>
+    <div class="flex items-center">
+      <span class="">+ Pay Loan EMI, Insurance Premiums & Education Fee</span>
+      <hr class="flex-grow">
+     </div><br>
+    <div class="flex items-center">
+      <span class="">+ Book Travel & Entertainment</span>
+      <hr class="flex-grow">
+     </div><br>
+    <div class="flex items-center">
+      <span class="">+ Investments & Miscellaneous</span>
+      <hr class="flex-grow">
+     </div><br>
+    <div class="flex items-center">
+      <span class="">+ Loans and Credit Cards</span>
+      <hr class="flex-grow">
+     </div><br>
+    <div class="flex items-center">
+      <span class="">+ Financial Tools & Calculators</span>
+      <hr class="flex-grow">
+     </div><br>
+  </ol>
+
+
+<script>
+  // Function to open the modal
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+  
+  // Function to close the modal
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+  
+  // Close the modal if the user clicks outside of it
+  window.onclick = function(event) {
+    var modal = document.getElementById("myModal");
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+  
+ </footer>
+  </body>
+</html>
